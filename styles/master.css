@@ -8,7 +8,7 @@ body{
 }
 
 section{
-  border-bottom: 2px solid red;
+  border-top: 2px solid #D1E2E8;
   min-height: 65vh;
 }
 
@@ -17,10 +17,10 @@ section{
 
 nav{
   min-height: 100px;
+  background-color: #D1E2E8;
 }
 
-#menuToggle
-{
+#menuToggle{
   display: block;
   position: relative;
   top: 50px;
@@ -31,21 +31,20 @@ nav{
 }
 
 
-#menuToggle a
-{
+#menuToggle a{
   text-decoration: none;
-  color: #232323;
+  color: white;
   transition: color 0.3s ease;
 }
 
-#menuToggle a:hover
-{
-  color: tomato;
+#menuToggle a:hover{
+  color: #E8BAC4;
+  font-weight: bold;
+  text-decoration: underline;
 }
 
 
-#menuToggle input
-{
+#menuToggle input{
   display: block;
   width: 40px;
   height: 32px;
@@ -54,25 +53,19 @@ nav{
   left: -5px;
 
   cursor: pointer;
-
-  opacity: 0; /* hide this */
-  z-index: 2; /* and place it over the hamburger */
-
+  opacity: 0;
+  z-index: 2;
   -webkit-touch-callout: none;
 }
 
-/*
- * Just a quick hamburger
- */
-#menuToggle span
-{
+#menuToggle span{
   display: block;
   width: 33px;
   height: 4px;
   margin-bottom: 5px;
   position: relative;
 
-  background: #cdcdcd;
+  background: #7C939C;
   border-radius: 3px;
 
   z-index: 1;
@@ -84,13 +77,11 @@ nav{
               opacity 0.55s ease;
 }
 
-#menuToggle span:first-child
-{
+#menuToggle span:first-child{
   transform-origin: 0% 0%;
 }
 
-#menuToggle span:nth-last-child(2)
-{
+#menuToggle span:nth-last-child(2){
   transform-origin: 0% 100%;
 }
 
@@ -98,46 +89,35 @@ nav{
  * Transform all the slices of hamburger
  * into a crossmark.
  */
-#menuToggle input:checked ~ span
-{
+#menuToggle input:checked ~ span{
   opacity: 1;
   transform: rotate(45deg) translate(-2px, -1px);
-  background: #232323;
+  background: white;
 }
 
-/*
- * But let's hide the middle one.
- */
-#menuToggle input:checked ~ span:nth-last-child(3)
-{
+
+#menuToggle input:checked ~ span:nth-last-child(3){
   opacity: 0;
   transform: rotate(0deg) scale(0.2, 0.2);
 }
 
-/*
- * Ohyeah and the last one should go the other direction
- */
-#menuToggle input:checked ~ span:nth-last-child(2)
-{
+
+#menuToggle input:checked ~ span:nth-last-child(2){
   transform: rotate(-45deg) translate(0, -1px);
 }
 
-/*
- * Make this absolute positioned
- * at the top left of the screen
- */
-#menu
-{
+/* Make this absolute positioned at the top left of the screen*/
+
+#menu{
   position: absolute;
   width: 300px;
   margin: -100px 0 0 -50px;
   padding: 50px;
   padding-top: 125px;
 
-  background: #ededed;
+  background: #7C939C;
   list-style-type: none;
   -webkit-font-smoothing: antialiased;
-  /* to stop flickering of text in safari */
 
   transform-origin: 0% 0%;
   transform: translate(-100%, 0);
@@ -145,20 +125,33 @@ nav{
   transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
 }
 
-#menu li
-{
+#menu li{
   padding: 10px 0;
   font-size: 22px;
 }
 
-/*
- * And let's slide it in from the left
- */
-#menuToggle input:checked ~ ul
-{
+#menuToggle input:checked ~ ul{
   transform: none;
 }
 
-.main{
-  display: block;
+
+/*_____________Textes_____________*/
+
+h1{
+  font-weight: bold;
+  font-size: 3em;
+  text-align: center;
+  color: #7C939C;
+}
+
+h2{
+  font-weight: bold;
+  font-size: 1,5em;
+  text-align: center;
+  color: #7C939C;
+}
+
+
+img{
+  width: 100%;
 }
