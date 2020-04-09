@@ -1,49 +1,75 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
 
-  <head>
+<head>
 
-    <meta charset="utf-8">
-    <title> CSS class</title>
-    <link rel="stylesheet" href="styles/master.css">
+  <meta charset="utf-8">
+  <title> CSS class</title>
 
-  </head>
+  <link rel="stylesheet" href="styles/master.css">
+  <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
 
-
-  <body>
-
-    <h1>Hello world wide web !</h1>
-
-    <head>
-
-      <a href="#main-menu">Open menu</a>
-
-      <nav id="main-menu">
-        <ul>
-          <li> <a href="#section01"> Go to section 01</a></li>
-          <li> <a href="#section02"> Go to section 02</a></li>
-        </ul>
-
-        <a href="#" class="close-menu">Close menu</a>
-
-      </nav>
-
-    </head>
+</head>
 
 
-    <section id="section01">
+<body>
+
+  <nav role="navigation">
+
+    <div id="menuToggle">
+
+      <input type="checkbox" />
+
+      <span></span>
+      <span></span>
+      <span></span>
+
+    <ul id="menu">
+
+      <a href="#section01"><li>Section 1</li></a>
+      <a href="#section02"><li>Section 2</li></a>
+      <a href="#section03"><li>Section 3</li></a>
+      <a href="#section04"><li>Section 4</li></a>
+
+    </ul>
+
+  </div>
+</nav>
+
+
+<div class="main">
+
+  <h1>Hello world wide web !</h1>
+
+  <section id="section01">
 
     <p>this is section 1</p>
 
-    </section>
+  </section>
 
 
-    <section id="section02">
+  <section id="section02">
 
     <p>this is section 2</p>
 
-    </section>
+  </section>
+
+  <section id="section03">
+
+    <p>this is section 3</p>
+
+  </section>
+
+  <section id="section04">
+
+    <p>this is section 4</p>
+
+  </section>
+
+</div>
 
 
-  </body>
+
+
+</body>
 </html>
