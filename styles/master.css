@@ -21,6 +21,10 @@ h2{
   font-family: "Optician-Sans";
 }
 
+.btn{
+  
+}
+
 
 /*_____________Menu burger_____________*/
 
@@ -191,7 +195,7 @@ img{
 }
 
 
-/*_____________Page alphabet - Grid_____________*/
+/*_____________Page alphabet - Grid & Flex_____________*/
 
 #container{
   display: grid;
@@ -204,11 +208,19 @@ img{
   color: #fff;
   padding: 20px;
   margin: 10px;
+  text-align: center;
 }
 
-
-#container_flex{
+#container:target {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+}
+
+.CTA{
+  text-align: center;
+}
+
+.CTA a{
+  margin: 10px;
 }
