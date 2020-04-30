@@ -22,7 +22,7 @@ h2{
 }
 
 .btn{
-  
+
 }
 
 
@@ -183,6 +183,7 @@ img{
 
 /*_____________Boutons_____________*/
 
+
 .btn {
   background-color: #7C939C;
   border: none;
@@ -197,6 +198,10 @@ img{
 
 /*_____________Page alphabet - Grid & Flex_____________*/
 
+.header{
+  text-align: center;
+}
+
 #container{
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -206,12 +211,12 @@ img{
 .box{
   background: #7C939C;
   color: #fff;
-  padding: 20px;
+  padding: 40px;
   margin: 10px;
   text-align: center;
 }
 
-#container:target {
+#container:target{
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -223,4 +228,10 @@ img{
 
 .CTA a{
   margin: 10px;
+}
+
+
+/*_____________Animations_____________*/
+.A:hover{
+  transform: rotate(0.5turn);
 }
