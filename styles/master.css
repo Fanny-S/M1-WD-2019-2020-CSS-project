@@ -211,7 +211,6 @@ img{
 .box{
   background: #7C939C;
   color: #fff;
-  padding: 40px;
   margin: 10px;
   text-align: center;
 }
@@ -234,4 +233,13 @@ img{
 /*_____________Animations_____________*/
 .A:hover{
   transform: rotate(0.5turn);
+}
+
+@keyframes slidein {
+  from { transform: translate(50, 50%); }
+  to   { transform: translate(-50px, 50%); }
+}
+
+.C{
+  animation: 3s linear 1s infinite alternate slidein;
 }
