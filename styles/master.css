@@ -1,36 +1,58 @@
 
 /*_____________Général_____________*/
-@font-face {
- font-family: "Optician-Sans";
- src: url("fonts/Optician-Sans.otf") format('truetype');
-}
-
 body{
   margin: 0;
   padding: 0;
   font-family: 'Lato', sans-serif;
+  font-size: 16px;
 }
 
 section{
-  border-top: 2px solid #D1E2E8;
+  border-top: 2px solid #6886c5;
   min-height: 65vh;
 }
 
 h1,
 h2{
-  font-family: "Optician-Sans";
+  font-family: 'Fredoka One', cursive;
 }
 
-.btn{
-
+h1{
+  font-weight: bold;
+  font-size: 3em;
+  text-align: center;
+  color: #6886c5;
 }
+
+h2{
+  font-weight: bold;
+  font-size: 1,5em;
+  text-align: center;
+  color: #6886c5;
+}
+
+
+img{
+  width: 100%;
+}
+
+/*_____________Slider_____________*/
+
+.slider{
+  background-image: url("../img/children.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  min-height: 50em;
+}
+
+
 
 
 /*_____________Menu burger_____________*/
 
 nav{
   min-height: 100px;
-  background-color: #D1E2E8;
+  background-color: #ffe0ac;
 }
 
 #menuToggle{
@@ -51,7 +73,7 @@ nav{
 }
 
 #menuToggle a:hover{
-  color: #E8BAC4;
+  color: #ffacb7;
   font-weight: bold;
   text-decoration: underline;
 }
@@ -78,7 +100,7 @@ nav{
   margin-bottom: 5px;
   position: relative;
 
-  background: #7C939C;
+  background: #6886c5;
   border-radius: 3px;
 
   z-index: 1;
@@ -128,7 +150,7 @@ nav{
   padding: 50px;
   padding-top: 125px;
 
-  background: #7C939C;
+  background: #6886c5;
   list-style-type: none;
   -webkit-font-smoothing: antialiased;
 
@@ -159,34 +181,13 @@ nav{
 }
 
 
-/*_____________Textes_____________*/
-
-h1{
-  font-weight: bold;
-  font-size: 3em;
-  text-align: center;
-  color: #7C939C;
-}
-
-h2{
-  font-weight: bold;
-  font-size: 1,5em;
-  text-align: center;
-  color: #7C939C;
-}
-
-
-img{
-  width: 100%;
-}
-
-
 /*_____________Boutons_____________*/
 
 
 .btn {
-  background-color: #7C939C;
+  background-color: #6886c5;
   border: none;
+  border-radius: 30px;
   color: white;
   padding: 15px 32px;
   text-align: center;
@@ -202,6 +203,13 @@ img{
   text-align: center;
 }
 
+.txt_intro{
+  width: 50%;
+  text-align: center;
+  margin: auto;
+  margin-bottom: 30px;
+}
+
 #container{
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -209,16 +217,21 @@ img{
 }
 
 .box{
-  background: #7C939C;
-  color: #fff;
+  background: #FEEDDC;
+  color: #6886c5;
   margin: 10px;
   text-align: center;
+  border-radius: 10px;
 }
 
 #container:target{
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+}
+
+#container:target img{
+  width:10%;
 }
 
 .CTA{
@@ -231,8 +244,14 @@ img{
 
 
 /*_____________Animations_____________*/
-.A:hover{
+
+.box:hover img{
   transform: rotate(0.5turn);
+}
+
+.box:hover{
+  background-color: #ffacb7;
+  color: white;
 }
 
 @keyframes slidein {
