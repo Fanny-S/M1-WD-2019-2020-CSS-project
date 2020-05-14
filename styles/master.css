@@ -19,9 +19,13 @@ h2{
 
 h1{
   font-weight: bold;
-  font-size: 3em;
+  font-size: 4em;
   text-align: center;
   color: #6886c5;
+}
+
+.titre_pageone{
+  margin: 0;
 }
 
 h2{
@@ -36,16 +40,19 @@ img{
   width: 100%;
 }
 
+
 /*_____________Slider_____________*/
 
 .slider{
   background-image: url("../img/children.jpg");
   background-repeat: no-repeat;
   background-position: center;
+  background-size: cover;
   min-height: 50em;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
-
-
 
 
 /*_____________Menu burger_____________*/
@@ -234,6 +241,10 @@ nav{
   width:10%;
 }
 
+#container:target svg{
+  width:10%;
+}
+
 .CTA{
   text-align: center;
 }
@@ -261,4 +272,26 @@ nav{
 
 .C{
   animation: 3s linear 1s infinite alternate slidein;
+}
+
+
+@keyframes langue {
+  from {  transform: translateX(10px); }
+  to   {  transform: translateX(20px); }
+}
+
+
+.cls-3{
+  animation: 3s linear 1s infinite alternate langue;
+}
+
+
+/*_____________Media queries_____________*/
+
+@media screen and (min-width: 100px) and (max-width: 480px) {
+  #container{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 20px;
+  }
 }
